@@ -17,14 +17,14 @@
     position: absolute;
     content: url("../images/tape1.webp");
     left: 0;
-    bottom: -3px;
+    bottom: -5px;
   }
   &:after {
     z-index: -2;
     position: absolute;
     content: url("../images/tape2.webp");
     right: 0;
-    bottom: -3px;
+    bottom: -5px;
   }
 }
 
@@ -184,7 +184,7 @@
   background: #FFF;
   color: #000;
 
-  font-family: Germania One;
+  font-family: GermaniaOne-Regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
