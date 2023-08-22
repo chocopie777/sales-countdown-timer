@@ -4,6 +4,7 @@ let minute1 = document.getElementById('minute-1');
 let minute2 = document.getElementById('minute-2');
 let second1 = document.getElementById('second-1');
 let second2 = document.getElementById('second-2');
+let burger = document.querySelector('.menu-burger');
 
 //сегодняшняя дата
 let date_now = new Date();
@@ -37,3 +38,8 @@ function displayTimeLeft() {
     second1.innerText = String(seconds).substring(0, 1);
     second2.innerText = String(seconds).substring(1, 2);
 }
+
+burger.addEventListener('click', () => {
+    document.querySelector('.header__bottom-wrapper').classList.toggle('header__bottom-wrapper--active');
+    document.querySelector('body').classList.toggle('off-scroll');
+});
